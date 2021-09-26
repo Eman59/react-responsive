@@ -15,14 +15,14 @@ const Footer = () => {
                         <i className="fab fa-facebook-square ms-3"></i>
                     </p>
                 </div>
-                <div className="col-md">
+                <div className="col-md col-6">
                     <p>Experience</p>
                     <p>Concern</p>
                     <p>Skin Type</p>
                     <p>Accessories</p>
                     <p>Bath and Beyond</p>
                 </div>
-                <div className="col-md">
+                <div className="col-md col-6">
                     <p>Subscription</p>
                     <p>Quiz</p>
                     <p>Contact Us</p>
