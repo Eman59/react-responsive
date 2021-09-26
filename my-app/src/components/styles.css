@@ -1,45 +1,5 @@
-@media (max-width: 992px) {
-    .navbar-brand{
-        margin-right: auto;
-    }
-    .navbar-toggler {
-        color: #ffffff !important;
-        /* border: none !important; */
-    }
-    li .ms-2 {
-        margin-left: 0px !important;
-    }
-    li .sign-up {
-        padding: 12px 12px 5px 11px !important;
-    }
-}
-
-@media(max-width: 767px) {
-    .banner-bg .customWidth {
-        max-width: 100% !important;
-    }
-}
-
-@media(max-width: 527px) {
-    .card {
-        flex-direction: column !important;
-    }
-    .card .card-img-top {
-        width: 100% !important;
-    }
-}
+@media (max-width:992px){.navbar-brand{margin-right:auto}.navbar-toggler{color:#fff!important}li .ms-2{margin-left:0!important}li .sign-up{padding:12px 12px 5px 11px!important}}@media(max-width:767px){.banner-bg .customWidth{max-width:100%!important}}@media(max-width:527px){.card{flex-direction:column!important}.card .card-img-top{width:100%!important}}
 
 .slick-next:before,.slick-prev:before{font-size:1.25rem;line-height:1;opacity:.75;color:#e40c2b}.slick-prev:before{content:url(https://mcusercontent.com/b92d2485d10e61be82fefc4e7/images/3f5b62d5-b812-64bf-c608-061761affb8c.png)}.slick-next:before{content:url(https://mcusercontent.com/b92d2485d10e61be82fefc4e7/images/e148b1e2-bd96-7d19-53eb-88948ceefcd8.png)}
 
-.slick-prev{
-    position: inherit;
-    top: -60px;
-    float: right;
-    left: -4rem;
-}
-
-.slick-next{
-    position: absolute;
-    top: -60px;
-    right: 1rem;
-}
+.slick-prev{position:inherit;top:-60px;float:right;left:-4rem}.slick-next{position:absolute;top:-60px;right:1rem}
