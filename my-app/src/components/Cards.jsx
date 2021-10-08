@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import data from "./data";
 import "./styles.css";
-import mask from "../assets/mask.png";
+import mask from "../assets/arrow/mask.png";
 
 const Cards = () => {
 

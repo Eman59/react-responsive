@@ -5,20 +5,36 @@ import search from "../assets/search/shape.png";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import "./styles.css";
-import menu from "../assets/icon-menu.png"
+import menu from "../assets/logo/icon-menu.png";
+import cartMobile from "../assets/cart/shape-media.png";
+import shoppingBag from "../assets/cart/shopping-bag.png";
 
 const Navigation = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <Container className="container">
-                <Link className="navbar-brand" to="/">
-                    <img src={logo} alt="logo.png" />
-                </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src={menu} alt="logo.png"/>
-                </button>
+                <div className="left-nav">
+                    <Link className="navbar-brand" to="/">
+                        <img src={logo} alt="logo.png" />
+                    </Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src={menu} alt="logo.png" />
+                    </button>
+                </div>
+                <ul className="navbar-nav text-center media-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/">
+                            <img src={shoppingBag} alt="search.png" />
+                        </Link>
+                    </li>
+                    <li className="nav-item ms-3">
+                        <Link className="nav-link" to="/">
+                            <img src={cartMobile} alt="cart.png" />
+                        </Link>
+                    </li>
+                </ul>
                 <div className="collapse navbar-collapse" id="navbarText">
-                    <div className="d-flex justify-content-between" style={{width: "100%"}}>
+                    <div className="d-flex justify-content-between" style={{ width: "100%" }}>
                         <ul className="navbar-nav my-auto">
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle active" to="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,7 +95,7 @@ const Navigation = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <ul className="navbar-nav text-center">
+                        <ul className="navbar-nav text-center media-hidden">
                             <li className="nav-item">
                                 <Link className="nav-link sign-up" to="/">Sign In</Link>
                             </li>
@@ -102,9 +118,13 @@ const Navigation = () => {
 }
 
 const Container = styled.div`
+overflow: hidden;
     .navbar-brand{
         object-fit: contain;
     }
+    .media-nav{
+            display: none;
+        }
     ul{
         li{
         /* font-size: 0.938rem; */
