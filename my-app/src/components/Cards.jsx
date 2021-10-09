@@ -19,7 +19,7 @@ const Cards = () => {
                 {
                     products.map((product, index) => {
                         return (
-                            <div class="card col-md-6 mt-4" key={product.id}>
+                            <div class="card col-md-6 col-11 mt-4" key={product.id} style={{marginLeft: product.margin}}>
                                 <img src={product.img} class="card-img-top" alt="img.png" />
                                 <div class="card-body d-flex flex-column justify-content-center" style={{backgroundColor: product.bgColor}}>
                                     <h5 class="card-title">{product.title}</h5>
